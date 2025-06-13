@@ -7,7 +7,10 @@
 #ifndef SELFTEST_KVM_PROCESSOR_H
 #define SELFTEST_KVM_PROCESSOR_H
 
+#include <asm/vdso/processor.h>
+
 #include "kvm_util.h"
+#include "ucall_common.h"
 #include <linux/stringify.h>
 
 static inline uint64_t __kvm_reg_id(uint64_t type, uint64_t idx,
