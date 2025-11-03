@@ -59,6 +59,8 @@ struct kvm_riscv_hfence {
 };
 
 #define KVM_RISCV_VCPU_MAX_HFENCE	64
+#define KVM_DIRTY_LOG_MANUAL_CAPS   (KVM_DIRTY_LOG_MANUAL_PROTECT_ENABLE | \
+KVM_DIRTY_LOG_INITIALLY_SET)
 
 struct kvm_vm_stat {
 	struct kvm_vm_stat_generic generic;
